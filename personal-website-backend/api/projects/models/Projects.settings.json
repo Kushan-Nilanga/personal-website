@@ -7,7 +7,10 @@
   },
   "options": {
     "increments": true,
-    "timestamps": true,
+    "timestamps": [
+      "created_at",
+      "updated_at"
+    ],
     "comment": ""
   },
   "attributes": {
@@ -32,6 +35,21 @@
     },
     "project_documentation": {
       "type": "richtext"
+    },
+    "project_forks": {
+      "type": "integer"
+    },
+    "project_stars": {
+      "type": "integer"
+    },
+    "project_updated": {
+      "type": "string"
+    },
+    "project_law": {
+      "type": "string"
+    },
+    "project_language": {
+      "type": "string"
     }
   }
 }
