@@ -41,6 +41,55 @@ class MyApp extends App {
             .card-columns {
               column-count: 3;
             }
+            .card{
+              transition: box-shadow .5s;
+              box-shadow: 0 0 20px rgba(33,33,33,.2); 
+              border: none;
+            }
+            .card:hover{
+              transition: box-shadow .5s;
+              box-shadow: 0 0 30px rgba(33,33,33,.6); 
+            }
+            .CardText{
+              background-image: linear-gradient(to right, #4481eb,#25aae1);
+              transition:0.5s;
+              outline: 0;
+              border-style:none!important;
+            }
+
+            /*button edits*/
+            .btn-primary{
+              background-image: linear-gradient(to right, #4481eb,#25aae1);
+              transition:0.5s;
+              outline: 0;
+              border-style:none!important;
+            }
+            .btn-primary:hover{
+              background-image: linear-gradient(to left, #4481eb,#4481eb);
+              transition:0.5s;
+            }
+
+            @media (min-width: 100px) {
+              .card-columns {
+                  -webkit-column-count: 1;
+                  -moz-column-count: 1;
+                  column-count: 1;
+              }
+              }
+              @media (min-width: 48em) {
+                  .card-columns {
+                      -webkit-column-count: 2;
+                      -moz-column-count: 2;
+                      column-count: 2;
+                  }
+              }
+              @media (min-width: 62em) {
+                  .card-columns {
+                      -webkit-column-count: 3;
+                      -moz-column-count: 3;
+                      column-count: 3;
+                  }
+              }
           `}
         </style>
       </Container>

@@ -7,18 +7,15 @@
   },
   "options": {
     "increments": true,
-    "timestamps": [
-      "created_at",
-      "updated_at"
-    ],
+    "timestamps": true,
     "comment": ""
   },
   "attributes": {
     "project_name": {
       "type": "string"
     },
-    "project_github": {
-      "type": "string"
+    "project_description": {
+      "type": "text"
     },
     "project_thumbnail": {
       "model": "file",
@@ -30,26 +27,26 @@
       "via": "related",
       "plugin": "upload"
     },
-    "project_description": {
-      "type": "text"
+    "project_github": {
+      "type": "string"
     },
     "project_documentation": {
       "type": "richtext"
     },
+    "project_updated": {
+      "type": "string"
+    },
     "project_forks": {
       "type": "integer"
     },
-    "project_stars": {
-      "type": "integer"
-    },
-    "project_updated": {
+    "project_language": {
       "type": "string"
     },
     "project_law": {
       "type": "string"
     },
-    "project_language": {
-      "type": "string"
+    "project_stars": {
+      "type": "integer"
     }
   }
 }

@@ -10,6 +10,6 @@
 
 module.exports = {
   '0 2 * * *': () => {
-    strapi.config.functions.docker();
+    strapi.config.functions.scrape_github();
   },
 };

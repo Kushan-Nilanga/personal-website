@@ -40,8 +40,8 @@ class Index extends React.Component {
         <style jsx>
           {`
             .search {
-              margin: 20px;
-              width: 500px;
+              margin: 2%;
+              width: 98%;
             }
           `}
         </style>

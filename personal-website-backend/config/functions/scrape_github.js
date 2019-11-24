@@ -54,6 +54,7 @@ axios(url)
 
             // creating new entries if doesn't exist
             if (!strapi.query('projects').find({project_name:repo_name})) {
+                console.log("ran")
                 strapi.query('projects').create(
                     {
                         project_name: repo_name,
@@ -69,7 +70,7 @@ axios(url)
             } else {
                 // updating entries if exists
                 strapi.query('projects').update(
-                    { project_name: repo_name },
+                    {project_name:repo_name},
                     {
                         project_github: repo_link,
                         project_description: repo_desc,

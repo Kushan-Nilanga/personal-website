@@ -1,18 +1,15 @@
 /* components/RestaurantList/index.js */
 import gql from "graphql-tag";
-import Link from "next/link";
 import { graphql } from "react-apollo";
-import str from "string"
 import {
   Button,
   Card,
   CardBody,
   CardColumns,
   CardImg,
-  CardSubtitle,
   CardFooter
 } from "reactstrap";
-import { CardText, CardTitle, Col, Row } from "reactstrap";
+import { CardText, CardTitle } from "reactstrap";
 
 const Projectslist = (
   { data: { loading, error, projects }, search },
@@ -29,28 +26,29 @@ const Projectslist = (
     );
     if (searchQuery.length != 0) {
       return (
-        <div>
-          <div className="h-100">
-            {searchQuery.map(res => (
-              <Card
-                style={{ width: "30%", margin: "10px", borderRadius:"10px", height: "30%"}}
-                className="h-100"
-                key={res._id}
-              >
-                <CardImg
-                  top={true}
-                  style={{ height: 250, borderTopRightRadius:"10px", borderTopLeftRadius:"10px"}}
-                  src={`http://localhost:1337${res.project_thumbnail.url}`}
-                />
-                <CardBody>
-                  <CardTitle><strong>{(res.project_name).toUpperCase()}</strong></CardTitle>
-                  <CardText>{(res.project_description).substring(0,110)+"..."}</CardText>
-                  <Button color="secondary" size="sm">Read more</Button>
-                </CardBody>
-                <CardFooter>Footer</CardFooter>
-              </Card>
-            ))}
-          </div>
+        <CardColumns>
+          {searchQuery.map(res => (
+            <Card
+              className="text-muted"
+              style={{ margin: "10px", borderRadius: "10px" }}
+              key={res._id}
+            >
+              <CardImg
+                top={true}
+                style={{ height: 250, borderTopRightRadius: "10px", borderTopLeftRadius: "10px" }}
+                src={`http://localhost:1337${res.project_thumbnail.url}`}
+              />
+              <CardBody>
+                <CardTitle><strong style={{color:"#4d5f7d"}}>{(res.project_name).toUpperCase()}</strong></CardTitle>
+                <CardText>{res.project_description}</CardText>
+                <Button color="primary" onClick={()=>window.location.href=`project?proj=${res.project_name}`}>Read more</Button>
+              </CardBody>
+              <CardFooter>
+                <small>{res.project_language}</small>
+                <small className="float-right">{res.project_updated}</small>
+              </CardFooter>
+            </Card>
+          ))}
 
           <style jsx global>
             {`
@@ -64,15 +62,13 @@ const Projectslist = (
               a:hover {
                 color: white;
               }
-              .card-columns {
-                column-count: 3;
-              }
+              
             `}
           </style>
-        </div>
+        </CardColumns>
       );
     } else {
-      return <h3>Couldn't find that project 	(ㆆ _ ㆆ)</h3>;
+      return <h3>Couldn't find that project</h3>;
     }
   }
   return <h1>Loading</h1>;
@@ -83,9 +79,9 @@ const query = gql`
     projects {
       project_name
       project_description
-      project_thumbnail {
-        url
-      }
+      project_thumbnail {url}
+      project_updated,
+      project_language
     }
   }
 `;
