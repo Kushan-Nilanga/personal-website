@@ -2,13 +2,15 @@
 import gql from "graphql-tag";
 import Link from "next/link";
 import { graphql } from "react-apollo";
+import str from "string"
 import {
   Button,
   Card,
   CardBody,
   CardColumns,
   CardImg,
-  CardSubtitle
+  CardSubtitle,
+  CardFooter
 } from "reactstrap";
 import { CardText, CardTitle, Col, Row } from "reactstrap";
 
@@ -31,19 +33,21 @@ const Projectslist = (
           <div className="h-100">
             {searchQuery.map(res => (
               <Card
-                style={{ width: "30%", margin: "0 10px", borderRadius:"10px" }}
+                style={{ width: "30%", margin: "10px", borderRadius:"10px", height: "30%"}}
                 className="h-100"
                 key={res._id}
               >
                 <CardImg
                   top={true}
-                  style={{ height: 250, borderTopRightRadius:"10px", borderTopLeftRadius:"10px" }}
+                  style={{ height: 250, borderTopRightRadius:"10px", borderTopLeftRadius:"10px"}}
                   src={`http://localhost:1337${res.project_thumbnail.url}`}
                 />
                 <CardBody>
-                  <CardTitle><strong>{res.project_name}</strong></CardTitle>
-                  <CardText>{res.project_description}</CardText>
+                  <CardTitle><strong>{(res.project_name).toUpperCase()}</strong></CardTitle>
+                  <CardText>{(res.project_description).substring(0,110)+"..."}</CardText>
+                  <Button color="secondary" size="sm">Read more</Button>
                 </CardBody>
+                <CardFooter>Footer</CardFooter>
               </Card>
             ))}
           </div>
@@ -62,12 +66,6 @@ const Projectslist = (
               }
               .card-columns {
                 column-count: 3;
-              }
-              CardBody::before{
-                background: #4CAF50;
-                filter: blur(50px);
-                transition: all .3s ease-in-out;
-                z-index: -1;
               }
             `}
           </style>
