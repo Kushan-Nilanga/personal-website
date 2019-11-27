@@ -52,6 +52,11 @@ class Layout extends React.Component {
                 <a className="navbar-brand">Home</a>
               </Link>
             </NavItem>
+            <NavItem>
+              <Link href="/projects">
+                <a className="navbar-brand">Home</a>
+              </Link>
+            </NavItem>
           </Nav>
         </header>
         <Container>{children}</Container>

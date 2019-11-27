@@ -1,5 +1,3 @@
-const gql = require("graphql-tag");
-const{ graphql } = require( "react-apollo");
 const axios = require('axios')
 axios_repo = require('axios')
 const cheerio = require('cheerio')
@@ -51,6 +49,7 @@ axios(url)
             const repo_law = $(this).find('.octicon-law').parent().text().trim()
             //console.log(repo_law)
 
+            // Try update records if doesn't exist creates a record
             strapi.query('projects').update(
                 { project_name: repo_name },
                 {
@@ -72,7 +71,8 @@ axios(url)
                         project_stars: repo_stars,
                         project_updated: repo_update,
                         project_law: repo_law,
-                        project_language: repo_lang
+                        project_language: repo_lang,
+                        project_thumbnail: {url:"https://flow.org/assets/featurette-bigger-1bf46c79a08d766c5e04d856bd0e3913cfc2524b8a734f3a1648e04250c7f0b3.gif"}
                     }
                 ).catch(console.error)
             })

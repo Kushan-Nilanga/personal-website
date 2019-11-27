@@ -1,20 +1,11 @@
 /* components/RestaurantList/index.js */
 import gql from "graphql-tag";
 import { graphql } from "react-apollo";
-import {
-  Button,
-  Card,
-  CardBody,
-  CardColumns,
-  CardImg,
-  CardFooter
-} from "reactstrap";
+import {Button,Card,CardBody,CardColumns,CardImg,CardFooter} from "reactstrap";
 import { CardText, CardTitle } from "reactstrap";
 
 const Projectslist = (
-  { data: { loading, error, projects }, search },
-  req
-) => {
+  { data: { loading, error, projects }, search }, req) => {
   if (error) return "Error loading restaurants";
   //if restaurants are returned from the GraphQL query, run the filter query
   //and set equal to variable restaurantSearch
