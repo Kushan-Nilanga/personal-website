@@ -1,6 +1,6 @@
 /* components/RestaurantList/index.js */
 import gql from "graphql-tag";
-import { graphql } from "react-apollo";
+import { graphql } from "react-apollo"
 import {Button,Card,CardBody,CardColumns,CardImg,CardFooter} from "reactstrap";
 import { CardText, CardTitle } from "reactstrap";
 

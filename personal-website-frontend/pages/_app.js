@@ -57,6 +57,11 @@ class MyApp extends App {
               border-style:none!important;
             }
 
+            .navbar{
+              background:none!important;
+              background-color: rgba(0,0,0,0.0)!important;
+            }
+
             /*button edits*/
             .btn-primary{
               background-image: linear-gradient(to right, #4481eb,#25aae1);
