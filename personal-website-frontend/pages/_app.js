@@ -62,18 +62,7 @@ class MyApp extends App {
               background-color: rgba(0,0,0,0.0)!important;
             }
 
-            /*button edits*/
-            .btn-primary{
-              background-image: linear-gradient(to right, #4481eb,#25aae1);
-              transition:0.5s;
-              outline: 0;
-              border-style:none!important;
-            }
-            .btn-primary:hover{
-              background-image: linear-gradient(to left, #4481eb,#4481eb);
-              transition:0.5s;
-            }
-
+            
             @media (min-width: 100px) {
               .card-columns {
                   -webkit-column-count: 1;

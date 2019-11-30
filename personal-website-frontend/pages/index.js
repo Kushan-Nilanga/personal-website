@@ -1,6 +1,6 @@
 import React from "react"
 import {
-  Container, Row, Col, Card, CardColumns, CardImg, CardBody, CardFooter, CardTitle,
+  Container, Row, Col, Card, CardImg, CardTitle,
   CardText, Button, Navbar, Nav, NavItem, NavLink, Jumbotron
 } from "reactstrap";
 
@@ -8,7 +8,7 @@ class Index extends React.Component {
   render() {
     return (
       <div>
-        <div style={{ background: 'url("/img/jumbo.JPG") center center' }}>
+        <div style={{ background: 'url("/img/jumbo.JPG") center center', backgroundSize:"100%" }}>
           <Navbar sticky={"top"} className="sticky-top" style={{ position: "sticky" }}>
             <Nav className="navbar navbar-light" sticky={"top"} style={{ position: "sticky" }}>
               <NavItem>
