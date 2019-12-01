@@ -53,12 +53,12 @@ class Layout extends React.Component {
             <Container style={{ color: "white", padding: "4em 0em" }}>
             <h6 className="text-center" style={{ padding: "1em 1em 2em 1em" }}>&lt; /&nbsp;&nbsp;&nbsp; S T A Y &nbsp;&nbsp;C O N N E C T E D &nbsp;&nbsp;&nbsp;&gt;</h6>
               <div className="text-center">
-                <a href="https://www.facebook.com/kushan.nilanga.athalage"><img src="/img/facebook.png" width="60" style={{padding:"10px 10px 10px 10px"}}/></a>
-                <a href="https://github.com/Kushan-Nilanga"><img src="/img/github.png" width="60" style={{padding:"10px 10px 10px 10px"}}/></a>
-                <a href="https://www.youtube.com/channel/UCv4-nJnWVSBipg36Uc_iR0Q/"><img src="/img/youtube.png" width="60" style={{padding:"10px 10px 10px 10px"}}/></a>
-                <a href="https://www.linkedin.com/in/kushan-nilanga-196550a5/"><img src="/img/linkedin.png" width="60" style={{padding:"10px 10px 10px 10px"}}/></a>
-                <a href="https://twitter.com/dknathalage"><img src="/img/twitter.png" width="60" style={{padding:"10px 10px 10px 10px"}}/></a>
-                <a href="https://www.instagram.com/kushan_nilanga/?hl=en"><img src="/img/instagram.png" width="60" style={{padding:"10px 10px 10px 10px"}}/></a>
+                <a target="_blank" href="https://www.facebook.com/kushan.nilanga.athalage"><img src="/img/facebook.png" width="60" style={{padding:"10px 10px 10px 10px"}}/></a>
+                <a target="_blank" href="https://github.com/Kushan-Nilanga"><img src="/img/github.png" width="60" style={{padding:"10px 10px 10px 10px"}}/></a>
+                <a target="_blank" href="https://www.youtube.com/channel/UCv4-nJnWVSBipg36Uc_iR0Q/"><img src="/img/youtube.png" width="60" style={{padding:"10px 10px 10px 10px"}}/></a>
+                <a target="_blank" href="https://www.linkedin.com/in/kushan-nilanga-196550a5/"><img src="/img/linkedin.png" width="60" style={{padding:"10px 10px 10px 10px"}}/></a>
+                <a target="_blank" href="https://twitter.com/dknathalage"><img src="/img/twitter.png" width="60" style={{padding:"10px 10px 10px 10px"}}/></a>
+                <a target="_blank" href="https://www.instagram.com/kushan_nilanga/?hl=en"><img src="/img/instagram.png" width="60" style={{padding:"10px 10px 10px 10px"}}/></a>
               </div>
             </Container>
           </div>

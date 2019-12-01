@@ -37,7 +37,7 @@ class Github extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink href="/github">
-                  <a className="navbar-nav">Projects</a>
+                  <a className="navbar-nav">Repositories</a>
                 </NavLink>
               </NavItem>
               <NavItem>

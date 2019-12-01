@@ -13,7 +13,7 @@ class Index extends React.Component {
             <Nav className="navbar navbar-light" sticky={"top"} style={{ position: "sticky" }}>
               <NavItem>
                 <NavLink href="/">
-                  <a className="navbar-brand">Kushan Nilanga Athalage</a>
+                  <a className="navbar-brand">Kushan Nilanga</a>
                 </NavLink>
               </NavItem>
               <NavItem>

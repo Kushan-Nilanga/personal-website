@@ -32,7 +32,7 @@ const Projectslist = (
               <CardBody>
                 <CardTitle><strong style={{color:"#4d5f7d"}}>{(res.project_name).toUpperCase()}</strong></CardTitle>
                 <CardText>{res.project_description}</CardText>
-                <Button color="secondary" size="sm" onClick={()=>window.location.href=`project?proj=${res.project_name}`}>Read more</Button>
+                <Button target="_blank" color="secondary" size="sm" onClick={()=>window.open(`${res.project_github}`, "_blank")}>View Repository</Button>
               </CardBody>
               <CardFooter>
                 <small>{res.project_language}</small>
@@ -70,8 +70,9 @@ const query = gql`
     projects {
       project_name
       project_description
+      project_github
       project_thumbnail {url}
-      project_updated,
+      project_updated
       project_language
     }
   }
