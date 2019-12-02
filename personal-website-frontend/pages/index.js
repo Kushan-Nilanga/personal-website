@@ -22,11 +22,6 @@ class Index extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem>
-                <NavLink href="/stack">
-                  <a className="navbar-nav">Technology Stack</a>
-                </NavLink>
-              </NavItem>
-              <NavItem>
                 <NavLink href="/photography">
                   <a className="navbar-nav">Photography</a>
                 </NavLink>

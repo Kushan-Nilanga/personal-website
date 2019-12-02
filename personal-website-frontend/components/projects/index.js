@@ -6,7 +6,7 @@ import { CardText, CardTitle } from "reactstrap";
 
 const Projectslist = (
   { data: { loading, error, projects }, search }, req) => {
-  if (error) return "Error loading restaurants";
+  if (error) return "Error loading projects";
   //if restaurants are returned from the GraphQL query, run the filter query
   //and set equal to variable restaurantSearch
 

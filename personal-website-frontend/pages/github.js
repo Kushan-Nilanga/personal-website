@@ -1,5 +1,6 @@
 import React from "react";
 import Projectslist from "../components/projects";
+import Navigation from "../components/navigation"
 import {
   Col,
   Input,
@@ -7,8 +8,6 @@ import {
   InputGroupAddon,
   Row,
   Container
-} from "reactstrap";
-import {Navbar, Nav, NavItem, NavLink, Jumbotron
 } from "reactstrap";
 
 class Github extends React.Component {
@@ -27,44 +26,7 @@ class Github extends React.Component {
   render() {
     return (
       <div>
-        <div style={{ background: 'url("/img/projects.jpg") center center', backgroundSize:"100%" }}>
-          <Navbar sticky={"top"} className="sticky-top" style={{ position: "sticky" }}>
-            <Nav className="navbar navbar-light" sticky={"top"} style={{ position: "sticky" }}>
-              <NavItem>
-                <NavLink href="/">
-                  <a className="navbar-brand">Kushan Nilanga Athalage</a>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/github">
-                  <a className="navbar-nav">Repositories</a>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/stack">
-                  <a className="navbar-nav">Technology Stack</a>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/photography">
-                  <a className="navbar-nav">Photography</a>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/contact">
-                  <a className="navbar-nav">Contact Me</a>
-                </NavLink>
-              </NavItem>
-            </Nav>
-          </Navbar>
-          <Jumbotron style={{
-            padding: '5% 0em 5% 0em', backgroundColor: "rgba(0,0,0,0.0)",
-            color: 'white', width: "100%", borderRadius: "0", marginBottom: "0"
-          }}>
-            <h1 className="display-4 text-center">PROJECTS</h1>
-            <p className="lead text-center">The projects I've completed unill now</p>
-          </Jumbotron>
-        </div>
+        <Navigation/>
         <Container>
           <div className="container-fluid">
             <Row>
@@ -93,4 +55,4 @@ class Github extends React.Component {
   }
 }
 
-export default Github;
+export default Github

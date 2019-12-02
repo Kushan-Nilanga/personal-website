@@ -1,0 +1,23 @@
+{
+  "connection": "default",
+  "collectionName": "photographs",
+  "info": {
+    "name": "photographs",
+    "description": ""
+  },
+  "options": {
+    "increments": true,
+    "timestamps": true,
+    "comment": ""
+  },
+  "attributes": {
+    "photos": {
+      "model": "file",
+      "via": "related",
+      "plugin": "upload"
+    },
+    "description": {
+      "type": "text"
+    }
+  }
+}
