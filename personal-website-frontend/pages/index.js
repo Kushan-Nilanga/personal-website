@@ -17,6 +17,11 @@ class Index extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem>
+                <NavLink href="/github">
+                  <a className="navbar-nav">Projects</a>
+                </NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink href="/photography">
                   <a className="navbar-nav">Photography</a>
                 </NavLink>

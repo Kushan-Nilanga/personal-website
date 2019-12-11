@@ -1,5 +1,5 @@
 import React from 'react'
-import {Navbar, Nav, NavItem, NavLink, Jumbotron} from "reactstrap";
+import { Navbar, Nav, NavItem, NavLink, Jumbotron } from "reactstrap";
 class Navigation extends React.Component {
     constructor(props) {
         super(props)
@@ -13,6 +13,11 @@ class Navigation extends React.Component {
                             <NavItem>
                                 <NavLink href="/">
                                     <a className="navbar-brand">Kushan Nilanga Athalage</a>
+                                </NavLink>
+                            </NavItem>
+                            <NavItem>
+                                <NavLink href="/github">
+                                    <a className="navbar-nav">Projects</a>
                                 </NavLink>
                             </NavItem>
                             <NavItem>
