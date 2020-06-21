@@ -182,7 +182,10 @@ class Index extends React.Component {
                 <CardTitle>
                   <h6>ALGORITHMS</h6>
                 </CardTitle>
-                <CardText>Implementations of Predictive Analytic</CardText>
+                <CardText>
+                  Implementations of Predictive Analytics algorithms from
+                  scratch
+                </CardText>
               </Card>
             </Col>
             <Col sm="4">
