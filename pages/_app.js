@@ -37,53 +37,53 @@ class MyApp extends App {
             }
             .card {
               display: inline-block !important;
+              background-color: rgba(237, 237, 237, 0.7);
             }
             .card-columns {
               column-count: 3;
             }
-            .card{
-              transition: box-shadow .5s;
-              box-shadow: 0 0 20px rgba(33,33,33,.2); 
+            .card {
+              transition: box-shadow 0.5s;
+              --box-shadow: 0 0 20px rgba(33, 33, 33, 0.2);
               border: none;
             }
-            .card:hover{
-              transition: box-shadow .5s;
-              box-shadow: 0 0 30px rgba(33,33,33,.6); 
+            .card:hover {
+              transition: box-shadow 0.5s;
+              --box-shadow: 0 0 30px rgba(33, 33, 33, 0.6);
             }
-            .CardText{
-              background-image: linear-gradient(to right, #4481eb,#25aae1);
-              transition:0.5s;
+            .CardText {
+              background-image: linear-gradient(to right, #4481eb, #25aae1);
+              transition: 0.5s;
               outline: 0;
-              border-style:none!important;
+              border-style: none !important;
             }
 
-            .navbar{
-              background:none!important;
-              background-color: rgba(0,0,0,0.0)!important;
+            .navbar {
+              background: none !important;
+              background-color: rgba(0, 0, 0, 0) !important;
             }
 
-            
             @media (min-width: 100px) {
               .card-columns {
-                  -webkit-column-count: 1;
-                  -moz-column-count: 1;
-                  column-count: 1;
+                -webkit-column-count: 1;
+                -moz-column-count: 1;
+                column-count: 1;
               }
+            }
+            @media (min-width: 48em) {
+              .card-columns {
+                -webkit-column-count: 2;
+                -moz-column-count: 2;
+                column-count: 2;
               }
-              @media (min-width: 48em) {
-                  .card-columns {
-                      -webkit-column-count: 2;
-                      -moz-column-count: 2;
-                      column-count: 2;
-                  }
+            }
+            @media (min-width: 62em) {
+              .card-columns {
+                -webkit-column-count: 3;
+                -moz-column-count: 3;
+                column-count: 3;
               }
-              @media (min-width: 62em) {
-                  .card-columns {
-                      -webkit-column-count: 3;
-                      -moz-column-count: 3;
-                      column-count: 3;
-                  }
-              }
+            }
           `}
         </style>
       </Container>

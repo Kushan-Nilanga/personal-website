@@ -135,7 +135,16 @@ class Index extends React.Component {
               <Col xs="12" md="6" lg="3">
                 <h6>SOFTWARE ENGINEERING</h6>
                 <ul>
-                  <li>Full Stack Development</li>
+                  <li>
+                    <a
+                      href="https://github.com/Kushan-Nilanga/rl-pytorch"
+                      style={{
+                        color: "black",
+                      }}
+                    >
+                      Reinforcement Learning
+                    </a>
+                  </li>
                   <li>MatLab</li>
                 </ul>
               </Col>
@@ -163,14 +172,33 @@ class Index extends React.Component {
               <CardImg
                 top={true}
                 style={{
-                  height: 250,
+                  width: "100%",
                   borderTopRightRadius: "10px",
                   borderTopLeftRadius: "10px",
                 }}
-                src={`http://localhost:1337`}
+                src={`https://66.media.tumblr.com/22a299820edec059201997a1aab7e8e4/8ed204ea11c42b0d-2a/s500x750/ceff39fe5baf669122a035b9687750875406ec80.gif`}
               />
               <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
+                <CardTitle>
+                  <h6>ALGORITHMS</h6>
+                </CardTitle>
+                <CardText>Implementations of Predictive Analytic</CardText>
+              </Card>
+            </Col>
+            <Col sm="4">
+              <CardImg
+                top={true}
+                style={{
+                  width: "100%",
+                  borderTopRightRadius: "10px",
+                  borderTopLeftRadius: "10px",
+                }}
+                src={`https://24.media.tumblr.com/cdbedba9730b691719aaa01cafbb02d9/tumblr_n61a1eRP3J1smuyxxo1_500.gif`}
+              />
+              <Card body>
+                <CardTitle>
+                  <h6>REINFORCEMENT LEARNING</h6>
+                </CardTitle>
                 <CardText>
                   With supporting text below as a natural lead-in to additional
                   content.
@@ -181,32 +209,16 @@ class Index extends React.Component {
               <CardImg
                 top={true}
                 style={{
-                  height: 250,
+                  width: "100%",
                   borderTopRightRadius: "10px",
                   borderTopLeftRadius: "10px",
                 }}
-                src={`http://localhost:1337`}
+                src={`https://ze-us.xyz/images/neuralnet.gif`}
               />
               <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
-                <CardText>
-                  With supporting text below as a natural lead-in to additional
-                  content.
-                </CardText>
-              </Card>
-            </Col>
-            <Col sm="4">
-              <CardImg
-                top={true}
-                style={{
-                  height: 250,
-                  borderTopRightRadius: "10px",
-                  borderTopLeftRadius: "10px",
-                }}
-                src={`http://localhost:1337`}
-              />
-              <Card body>
-                <CardTitle>Special Title Treatment</CardTitle>
+                <CardTitle>
+                  <h6>SUPERVISED LEARNING</h6>
+                </CardTitle>
                 <CardText>
                   With supporting text below as a natural lead-in to additional
                   content.
