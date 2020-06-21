@@ -1,13 +1,13 @@
 import React from "react";
 import Projectslist from "../components/projects";
-import Navigation from "../components/navigation"
+import Navigation from "../components/navigation";
 import {
   Col,
   Input,
   InputGroup,
   InputGroupAddon,
   Row,
-  Container
+  Container,
 } from "reactstrap";
 
 class Github extends React.Component {
@@ -15,7 +15,7 @@ class Github extends React.Component {
     super(props);
     //query state will be passed to RestaurantList for the filter query
     this.state = {
-      query: ""
+      query: "",
     };
   }
   onChange(e) {
@@ -26,28 +26,14 @@ class Github extends React.Component {
   render() {
     return (
       <div>
-        <Navigation/>
+        <Navigation />
         <Container>
           <div className="container-fluid">
             <Row>
               <Col>
-                <div className="search">
-                  <InputGroup>
-                    <InputGroupAddon addonType="append"> Search </InputGroupAddon>
-                    <Input onChange={this.onChange.bind(this)} />
-                  </InputGroup>
-                </div>
-                <Projectslist search={this.state.query} />
+                <h1>hello</h1>
               </Col>
             </Row>
-            <style jsx>
-              {`
-            .search {
-              margin: 2%;
-              width: 98%;
-            }
-          `}
-            </style>
           </div>
         </Container>
       </div>
@@ -55,4 +41,4 @@ class Github extends React.Component {
   }
 }
 
-export default Github
+export default Github;
