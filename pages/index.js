@@ -23,7 +23,7 @@ class Index extends React.Component {
           style={{
             background: 'url("/img/jumbo.JPG")',
             backgroundAttachment: "fixed",
-            backgroundSize: "270%",
+            backgroundSize: "250%",
           }}
         >
           <Navbar
