@@ -1,7 +1,6 @@
 /* /pages/_app.js */
 
 import Layout from "../components/layout";
-import withData from "../lib/apollo";
 
 import App, { Container } from "next/app";
 import React from "react";
@@ -25,12 +24,14 @@ class MyApp extends App {
 
         <style jsx global>
           {`
-            a {
+            #header.a {
               color: white !important;
             }
+            a {
+              color: black !important;
+            }
             a:link {
-              text-decoration: none !important;
-              color: white !important;
+              color: black !important;
             }
             a:hover {
               color: white;
@@ -49,7 +50,11 @@ class MyApp extends App {
             }
             .card:hover {
               transition: box-shadow 0.5s;
-              --box-shadow: 0 0 30px rgba(33, 33, 33, 0.6);
+              box-shadow: 0 0 10px rgba(33, 33, 33, 0.6);
+            }
+            .card-img:hover {
+              transition: box-shadow 0.5s;
+              box-shadow: 0 0 10px rgba(33, 33, 33, 0.6);
             }
             .CardText {
               background-image: linear-gradient(to right, #4481eb, #25aae1);
@@ -90,4 +95,4 @@ class MyApp extends App {
     );
   }
 }
-export default withData(MyApp);
+export default MyApp;

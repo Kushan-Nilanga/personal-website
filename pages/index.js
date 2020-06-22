@@ -21,8 +21,9 @@ class Index extends React.Component {
       <div>
         <div
           style={{
-            background: 'url("/img/jumbo.JPG") center center',
-            backgroundSize: "100%",
+            background: 'url("/img/jumbo.JPG")',
+            backgroundAttachment: "fixed",
+            backgroundSize: "270%",
           }}
         >
           <Navbar
@@ -37,17 +38,12 @@ class Index extends React.Component {
             >
               <NavItem>
                 <NavLink href="/">
-                  <a className="navbar-brand">Kushan Nilanga</a>
+                  <a className="navbar-brand">Kushan Nilanga Athalage</a>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/github">
                   <a className="navbar-nav">Projects</a>
-                </NavLink>
-              </NavItem>
-              <NavItem>
-                <NavLink href="/photography">
-                  <a className="navbar-nav">Photography</a>
                 </NavLink>
               </NavItem>
               <NavItem>
@@ -59,7 +55,7 @@ class Index extends React.Component {
           </Navbar>
           <Jumbotron
             style={{
-              padding: "31% 0em 9% 0em",
+              padding: "17% 2em 25% 2em",
               backgroundColor: "rgba(0,0,0,0.0)",
               color: "white",
               width: "100%",
@@ -67,11 +63,15 @@ class Index extends React.Component {
               marginBottom: "0",
             }}
           >
-            <h1 className="display-4 text-center">KUSHAN &nbsp;NILANGA</h1>
-            <p className="lead text-center">
-              {" "}
-              A desperate attempt to create cool stuff
-            </p>
+            <h1
+              className="display-4 text-center"
+              style={{ color: "black", paddingBottom: "2%" }}
+            >
+              KUSHAN &nbsp;NILANGA &nbsp;ATHALAGE
+            </h1>
+            <h3 className="lead text-center" style={{ color: "black" }}>
+              <strong> A desperate attempt to create cool stuff</strong>
+            </h3>
           </Jumbotron>
         </div>
         <div
@@ -168,7 +168,7 @@ class Index extends React.Component {
             S &nbsp;&nbsp;&nbsp;&gt;
           </h5>
           <Row>
-            <Col sm="4">
+            <Col sm="4" style={{ padding: "2%" }}>
               <CardImg
                 top={true}
                 style={{
@@ -178,7 +178,7 @@ class Index extends React.Component {
                 }}
                 src={`https://66.media.tumblr.com/22a299820edec059201997a1aab7e8e4/8ed204ea11c42b0d-2a/s500x750/ceff39fe5baf669122a035b9687750875406ec80.gif`}
               />
-              <Card body>
+              <Card body style={{ paddingBottom: "1em" }}>
                 <CardTitle>
                   <h6>ALGORITHMS</h6>
                 </CardTitle>
@@ -188,7 +188,7 @@ class Index extends React.Component {
                 </CardText>
               </Card>
             </Col>
-            <Col sm="4">
+            <Col sm="4" style={{ padding: "2%" }}>
               <CardImg
                 top={true}
                 style={{
@@ -208,7 +208,7 @@ class Index extends React.Component {
                 </CardText>
               </Card>
             </Col>
-            <Col sm="4">
+            <Col sm="4" style={{ padding: "2%" }}>
               <CardImg
                 top={true}
                 style={{
