@@ -1,3 +1,3 @@
 # These files are excluded from being pushed to github
-node_modules
 .next
+node_modules
