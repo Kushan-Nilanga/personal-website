@@ -12,7 +12,9 @@ import {
   Nav,
   NavItem,
   NavLink,
+  CardLink,
   Jumbotron,
+  CardImgOverlay,
 } from "reactstrap";
 
 class Index extends React.Component {
@@ -23,32 +25,35 @@ class Index extends React.Component {
           style={{
             background: 'url("/img/jumbo.JPG")',
             backgroundAttachment: "fixed",
-            backgroundSize: "250%",
+            backgroundSize: "300%",
           }}
         >
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/react/16.6.3/umd/react.production.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/react-dom/16.6.3/umd/react-dom.production.min.js"></script>
           <Navbar
-            sticky={"top"}
-            className="sticky-top"
-            style={{ position: "sticky" }}
+            className="navbar-expand-sm navbar-toggleable-sm ng-white"
+            light
           >
-            <Nav
-              className="navbar navbar-light"
-              sticky={"top"}
-              style={{ position: "sticky" }}
-            >
+            <Nav className="navbar navbar-light">
               <NavItem>
                 <NavLink href="/">
-                  <a className="navbar-brand">Kushan Nilanga Athalage</a>
+                  <a style={{ color: "black" }} className="navbar-brand">
+                    Kushan Nilanga Athalage
+                  </a>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/github">
-                  <a className="navbar-nav">Projects</a>
+                  <a style={{ color: "black" }} className="navbar-nav">
+                    Projects
+                  </a>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/contact">
-                  <a className="navbar-nav">Contact Me</a>
+                  <a style={{ color: "black" }} className="navbar-nav">
+                    Contact Me
+                  </a>
                 </NavLink>
               </NavItem>
             </Nav>
@@ -65,12 +70,12 @@ class Index extends React.Component {
           >
             <h1
               className="display-4 text-center"
-              style={{ color: "black", paddingBottom: "2%" }}
+              style={{ color: "black", paddingBottom: "1%" }}
             >
               KUSHAN &nbsp;NILANGA &nbsp;ATHALAGE
             </h1>
             <h3 className="lead text-center" style={{ color: "black" }}>
-              <strong> A desperate attempt to create cool stuff</strong>
+              A desperate attempt to create cool stuff
             </h3>
           </Jumbotron>
         </div>
@@ -168,7 +173,7 @@ class Index extends React.Component {
             S &nbsp;&nbsp;&nbsp;&gt;
           </h5>
           <Row>
-            <Col sm="4" style={{ padding: "2%" }}>
+            <Col sm="4" style={{ padding: "1%" }}>
               <CardImg
                 top={true}
                 style={{
@@ -186,9 +191,12 @@ class Index extends React.Component {
                   Implementations of Predictive Analytics algorithms from
                   scratch
                 </CardText>
+                <CardLink href="https://github.com/Kushan-Nilanga/">
+                  View Github
+                </CardLink>
               </Card>
             </Col>
-            <Col sm="4" style={{ padding: "2%" }}>
+            <Col sm="4" style={{ padding: "1%" }}>
               <CardImg
                 top={true}
                 style={{
@@ -206,9 +214,12 @@ class Index extends React.Component {
                   With supporting text below as a natural lead-in to additional
                   content.
                 </CardText>
+                <CardLink href="https://github.com/Kushan-Nilanga/rl-pytorch/">
+                  View Github
+                </CardLink>
               </Card>
             </Col>
-            <Col sm="4" style={{ padding: "2%" }}>
+            <Col sm="4" style={{ padding: "1%" }}>
               <CardImg
                 top={true}
                 style={{
@@ -218,6 +229,7 @@ class Index extends React.Component {
                 }}
                 src={`https://ze-us.xyz/images/neuralnet.gif`}
               />
+
               <Card body>
                 <CardTitle>
                   <h6>SUPERVISED LEARNING</h6>
@@ -226,6 +238,9 @@ class Index extends React.Component {
                   With supporting text below as a natural lead-in to additional
                   content.
                 </CardText>
+                <CardLink href="https://github.com/Kushan-Nilanga/">
+                  View Github
+                </CardLink>
               </Card>
             </Col>
           </Row>

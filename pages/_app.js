@@ -24,18 +24,7 @@ class MyApp extends App {
 
         <style jsx global>
           {`
-            #header.a {
-              color: white !important;
-            }
-            a {
-              color: black !important;
-            }
-            a:link {
-              color: black !important;
-            }
-            a:hover {
-              color: white;
-            }
+            
             .card {
               display: inline-block !important;
               background-color: rgba(237, 237, 237, 0.7);
@@ -61,11 +50,6 @@ class MyApp extends App {
               transition: 0.5s;
               outline: 0;
               border-style: none !important;
-            }
-
-            .navbar {
-              background: none !important;
-              background-color: rgba(0, 0, 0, 0) !important;
             }
 
             @media (min-width: 100px) {

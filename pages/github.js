@@ -8,13 +8,14 @@ import {
   ListGroupItem,
   ListGroupItemHeading,
   ListGroupItemText,
+  Button,
 } from "reactstrap";
 
 class Github extends React.Component {
   render() {
     return (
       <div>
-        <Navigation header="Projects" description="THis is" />
+        <Navigation header="Projects" description="" />
         <Container>
           <div className="container-fluid">
             <Row>
@@ -22,29 +23,32 @@ class Github extends React.Component {
                 <ListGroup style={{ padding: "1em 1em 1em 1em" }} flush>
                   <ListGroupItem tag="a">
                     <ListGroupItemHeading>
-                      List group item heading
+                    rl-pytorch
                     </ListGroupItemHeading>
                     <ListGroupItemText>
-                      Donec id elit non mi porta gravida at eget metus. Maecenas
-                      sed diam eget risus varius blandit.
+                      My implementations of popular reinforcement learning methods based on other 
+                      developers and research papers &nbsp;|
+                      <Button color="link" size="sm"><a href="https://github.com/Kushan-Nilanga/rl-pytorch/">Github</a></Button>   
                     </ListGroupItemText>
                   </ListGroupItem>
-                  <ListGroupItem>
+                  <ListGroupItem tag="a">
                     <ListGroupItemHeading>
-                      List group item heading
+                    personal-website
                     </ListGroupItemHeading>
                     <ListGroupItemText>
-                      Donec id elit non mi porta gravida at eget metus. Maecenas
-                      sed diam eget risus varius blandit.
+                      Node JS version of my website. thin include next js 
+                      frontend and strapi backend. &nbsp;|
+                      <Button color="link" size="sm"><a href="https://github.com/Kushan-Nilanga/personal-website/">Github</a></Button>   
                     </ListGroupItemText>
                   </ListGroupItem>
-                  <ListGroupItem>
+                  <ListGroupItem tag="a">
                     <ListGroupItemHeading>
-                      List group item heading
+                    stackoverflow-profile-scraper
                     </ListGroupItemHeading>
                     <ListGroupItemText>
-                      Donec id elit non mi porta gravida at eget metus. Maecenas
-                      sed diam eget risus varius blandit.
+                      This repository contains python code to scrape profile data from 
+                      stack-overflow forum inorder to do basic analysis. In oder to scrape the data 2 main python libraries are used. &nbsp;|
+                      <Button color="link" size="sm"><a href="https://github.com/Kushan-Nilanga/stackoverflow-profile-scraper/">Github</a></Button>   
                     </ListGroupItemText>
                   </ListGroupItem>
                 </ListGroup>

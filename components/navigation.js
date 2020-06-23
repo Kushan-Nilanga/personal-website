@@ -14,11 +14,7 @@ class Navigation extends React.Component {
             height: "100%",
           }}
         >
-          <Navbar
-            sticky={"top"}
-            className="sticky-top"
-            style={{ position: "sticky" }}
-          >
+          <Navbar className="navbar-expand-sm navbar-toggleable-sm ng-white" light >
             <Nav
               className="navbar"
               sticky={"top"}
@@ -26,17 +22,17 @@ class Navigation extends React.Component {
             >
               <NavItem>
                 <NavLink href="/">
-                  <a className="navbar-brand">Kushan Nilanga Athalage</a>
+                  <a style={{color:"white"}} className="navbar-brand">Kushan Nilanga Athalage</a>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/github">
-                  <a className="navbar-nav">Projects</a>
+                  <a style={{color:"white"}} className="navbar-nav">Projects</a>
                 </NavLink>
               </NavItem>
               <NavItem>
                 <NavLink href="/contact">
-                  <a className="navbar-nav">Contact Me</a>
+                  <a style={{color:"white"}}  className="navbar-nav">Contact Me</a>
                 </NavLink>
               </NavItem>
             </Nav>
