@@ -1,5 +1,6 @@
 import React from "react";
 import Navigation from "../components/navigation";
+import Calendar from "../components/calendar";
 import {
   Col,
   Row,
@@ -10,14 +11,32 @@ import {
   ListGroupItemText,
   Button,
 } from "reactstrap";
+import Head from "next/head";
 
 class Github extends React.Component {
   render() {
     return (
       <div>
         <Navigation header="Projects" description="" />
+        <Head>
+          <link
+            rel="stylesheet"
+            href="node_modules/react-github-contribution-calendar/default.css"
+            type="text/css"
+          />
+        </Head>
         <Container>
           <div className="container-fluid">
+            <div className="text-center">
+              <h4 style={{ paddingTop: "1em" }}>GITHUB COMMIT CALENDAR</h4>
+              <img
+                style={{ padding: "1em 1em 1em 1em" }}
+                width="90%"
+                src="http://ghchart.rshah.org/Kushan-Nilanga"
+                alt="Name Your GitHub chart"
+              ></img>
+              <h4 style={{ padding: "1em" }}>GITHUB PROJECTS</h4>
+            </div>
             <Row>
               <Col>
                 <ListGroup style={{ padding: "1em 1em 1em 1em" }} flush>
