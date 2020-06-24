@@ -30,8 +30,8 @@ class Github extends React.Component {
             <div className="text-center">
               <h4 style={{ paddingTop: "1em" }}>GITHUB COMMIT CALENDAR</h4>
               <img
-                style={{ padding: "1em 1em 1em 1em" }}
-                width="90%"
+                width="104%"
+                style={{position:"relative",left:"-2%", paddingTop:"1em", paddingBottom:"2em"}}
                 src="http://ghchart.rshah.org/Kushan-Nilanga"
                 alt="Name Your GitHub chart"
               ></img>
@@ -39,7 +39,7 @@ class Github extends React.Component {
             </div>
             <Row>
               <Col>
-                <ListGroup style={{ padding: "1em 1em 1em 1em" }} flush>
+                <ListGroup style={{ padding: "1em 0.5em 1em 0.5em" }} flush>
                   <ListGroupItem tag="a">
                     <ListGroupItemHeading>rl-pytorch</ListGroupItemHeading>
                     <ListGroupItemText>
