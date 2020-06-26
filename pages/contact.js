@@ -1,15 +1,53 @@
 import React from "react";
 import Navigation from "../components/navigation";
+import {
+  Row,
+  Col,
+  Container,
+  Card,
+  CardBody,
+  CardText,
+  CardTitle,
+  CardSubtitle,
+  CardImg,
+  Button,
+} from "reactstrap";
+
+var profile_description = "I'm a software engineering undergraduate studying at Deakin University. "+
+"I learnt to program after developing a keen interest in the field. "+
+"I was always intrigued by the breakthroughs of the software engineering field every day. "+
+"I learn to code in Java when I was a kid. And then other programming languages such as Python, C++, Javascript and C# caught my attention."
 
 class Contact extends React.Component {
   render() {
     return (
       <div>
         <Navigation
-          header="My Contact Details"
-          description="This is the descriptions"
+          header="About Me"
         />
-        This is the Contact Page
+        <Container>
+          <div style={{ padding: "1em 1em 1em 1em" }}>
+            <Row>
+              <Col xs="12" md="6" lg="5" xl="4" height="5em">
+                <Card style={{ width: "100%", top:"-2em" }}>
+                  <CardImg
+                    top
+                    src="img/propic.JPG"
+                    style={{ objectFit: "fill" }}
+                    alt="Card image cap"
+                  />
+                  <CardBody style={{textAlign:"center"}}>
+                    <CardTitle><h4>HI, I'M KUSHAN ATHALAGE</h4></CardTitle>
+                  </CardBody>
+                </Card>
+              </Col>
+              <Col>
+                <h3>Little something about me...</h3>
+                <p>{profile_description} </p>
+              </Col>
+            </Row>
+          </div>
+        </Container>
       </div>
     );
   }

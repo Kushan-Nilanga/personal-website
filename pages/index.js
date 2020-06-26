@@ -52,7 +52,7 @@ class Index extends React.Component {
               <NavItem>
                 <NavLink href="/contact">
                   <a style={{ color: "black" }} className="navbar-nav">
-                    Contact Me
+                    About Me
                   </a>
                 </NavLink>
               </NavItem>
@@ -169,7 +169,7 @@ class Index extends React.Component {
         </Container>
         <Container style={{ padding: "0em 1em 2em 1em" }}>
           <h5 className="text-center" style={{ padding: "0em 1em 2em 1em" }}>
-            &lt; /&nbsp;&nbsp;&nbsp; S P O T L I G H T &nbsp;&nbsp;P R O J E C T
+            &lt; / &nbsp;&nbsp;P R O J E C T
             S &nbsp;&nbsp;&nbsp;&gt;
           </h5>
           <Row>

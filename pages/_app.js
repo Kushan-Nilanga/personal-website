@@ -39,11 +39,11 @@ class MyApp extends App {
             }
             .card:hover {
               transition: box-shadow 0.5s;
-              box-shadow: 0 0 10px rgba(33, 33, 33, 0.6);
+              box-shadow: 0 0 100px rgba(33, 33, 33, 0.3);
             }
             .card-img:hover {
               transition: box-shadow 0.5s;
-              box-shadow: 0 0 10px rgba(33, 33, 33, 0.6);
+              box-shadow: 0 0 100px rgba(33, 33, 33, 0.3);
             }
             .CardText {
               background-image: linear-gradient(to right, #4481eb, #25aae1);

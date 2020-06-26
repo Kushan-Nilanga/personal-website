@@ -32,7 +32,7 @@ class Navigation extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink href="/contact">
-                  <a style={{color:"white"}}  className="navbar-nav">Contact Me</a>
+                  <a style={{color:"white"}}  className="navbar-nav">About Me</a>
                 </NavLink>
               </NavItem>
             </Nav>
