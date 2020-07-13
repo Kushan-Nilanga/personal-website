@@ -116,8 +116,10 @@ class Index extends React.Component {
                   </ul>
                 </Col>
                 <Col xs="12" md="6" lg="3">
-                  <h6>CONTRIBUTIONS</h6>
-                  <ul></ul>
+                  <h6>TUTORIALS</h6>
+                  <ul>
+                    <li><a href="/react">React</a></li>
+                  </ul>
                 </Col>
               </Row>
             </div>
