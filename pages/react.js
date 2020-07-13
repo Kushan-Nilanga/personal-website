@@ -13,15 +13,13 @@ class ReactTutorial extends React.Component {
                             <h5>Introduction</h5>
                             <ul>
                                 <li><a href="#1">What is NodeJs</a></li>
-                                <li>Why use NodeJs
-                                <ul>
+                                <li><a href="#2">Why use NodeJs</a>
+                                    <ul>
                                         <li>Performance</li>
                                         <li>Scalability</li>
-                                        <li>No buffering</li>
-                                        <li>License</li>
                                     </ul>
                                 </li>
-                                <li>NodeJs vs. Others</li>
+                                <li><a href="#3">NodeJs vs. Others</a></li>
                                 <li>Applications of NodeJs -&nbsp;<a href="https://www.netguru.com/blog/6-types-of-applications-you-can-build-with-node.js?hsLang=en">https://www.netguru.com/blog/6-types-of-applications-you-can-build-with-node.js?hsLang=en</a>
                                     <ul>
                                         <li>Iot (Internet of Things) Applications</li>
@@ -68,18 +66,36 @@ class ReactTutorial extends React.Component {
                         </div>
                         <hr />
                         <div id="1">
-                            <CardImg src={'https://miro.medium.com/max/1000/1*A3EN6RoI9LIVpL7EhIGHzQ.gif'} style={{ width: "5em" }} />
+                            <CardImg src={'https://miro.medium.com/max/1000/1*A3EN6RoI9LIVpL7EhIGHzQ.gif'} style={{ width: "13em" }} />
                             <h4>Introduction</h4>
                             <h5>What is nodejs</h5>
-                            <p>"Node.js is an open-source, cross-platform, JavaScript runtime 
+                            <p>"Node.js is an open-source, cross-platform, JavaScript runtime
                             environment that executes JavaScript code outside a web browser."
-                                 - <a href="https://en.wikipedia.org/wiki/Node.js">Wikipedia</a><br/>
-                                NodeJs is a runtime environment that is build to run javascript. 
+                                 - <a href="https://en.wikipedia.org/wiki/Node.js">Wikipedia</a><br /><br />
+                                NodeJs is a runtime environment that is build to run javascript.
                                 JavaScript was a popular scripting language which was used to
-                                create moving elements of a website. JavaScript was used typically 
+                                create moving elements of a website. JavaScript was used typically
                                 for form validation, event handeling in client side of a web
-                                application.
-
+                                application. <br /><br />
+                                Just like how java runtime environment acts as the environment
+                                of java programming, nodejs acts as the runtime enviroment to
+                                developement of javascript based applications.
+                            </p>
+                            <h5 id='2'>Why use NodeJs</h5>
+                            <h6>Performance</h6>
+                            <p>NodeJs is a single threaded, non-blocking, asynchronous runtime. In
+                            simpler terms, nodejs can process multiple tasks using one thread concurrently
+                            which maked NodeJs extremely powerful.
+                            </p>
+                            <h6>Scalability</h6>
+                            <p>Due to NodeJs being very lightweight, frameworks such as Docker and Kubernates
+                            can harness the power of NodeJs to create scalable microservices architectures
+                            to tackle some computing and data handeling problems more efficiently.
+                            </p>
+                            <h5 id='3'>NodeJs vs. Others</h5>
+                            <p>NodeJs is considered more as a runtime environment rather than our usual
+                             server. Meaning NodeJs can be used to create virtually anything we can imagine.
+                                However, python language shows 
                             </p>
                         </div>
                     </div>
