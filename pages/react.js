@@ -7,7 +7,7 @@ class ReactTutorial extends React.Component {
         return (
             <div>
                 <Navigation header="React Tutorial" />
-                <Container style={{ padding: "1em", width: "50em" }}>
+                <Container style={{ padding: "1em" }}>
                     <div>
                         <div>
                             <h5>Introduction</h5>
@@ -28,7 +28,7 @@ class ReactTutorial extends React.Component {
                                         <li>Others</li>
                                     </ul>
                                 </li>
-                                <li>Drawbacks from NodeJs</li>
+                                <li><a href="#4">Drawbacks of NodeJs</a></li>
                                 <li>NodeJs for Frontend</li>
                                 <li>NodeJs frontend libraries</li>
                                 <li>Frontend libraries compared</li>
@@ -94,9 +94,34 @@ class ReactTutorial extends React.Component {
                             </p>
                             <h5 id='3'>NodeJs vs. Others</h5>
                             <p>NodeJs is considered more as a runtime environment rather than our usual
-                             server. Meaning NodeJs can be used to create virtually anything we can imagine.
-                                However, python language shows 
-                            </p>
+                            server. Meaning NodeJs can be used to create virtually anything we can imagine.
+                            However, python language shows some what similar characteristics to
+                            NodeJs. </p><br /><br />
+                            <h6>Performance</h6><p>
+                                Performance is one of the key areas that most of the highlevel programming languages
+                                fall behind. From them NodeJs proven to be one of the high performing programming
+                                language. To put things in to perspective, python being one of the most popular high level
+                                programming languages fall behind from performance. </p>
+                            <h6>Usability</h6><p>
+                                NodeJS can be used to wide area of tasks such as web development,
+                                microservices and even as mobile development framework with the help of
+                                packages like react-native. But most of todays highlevel programming languages
+                                    only excels in certain task domain. </p>
+                            <h5 id='4'>Drawbacks of NodeJS</h5>
+                            <h6>Handeling CPU intensive tasks</h6>
+                            <p>Although NodeJs proven to be one of the most high performing languages,
+                                it falls behind when computing CPU intensive tasks. </p>
+                            <h6>Speed of coding</h6>
+                            <p>Developing NodeJs applications take a bigger development cycle compared to that of
+                            Python. Coding in python is relatively easier compared to NodeJs. Even developing web applications
+                                using Flask and Django is comparatively straightforward compared with NodeJs</p>
+                            <h6>New technology</h6>
+                            <p>NodeJs is a really new technology which industry is adapting quicky. Even deep learning
+                            libraries such as Tensorflow have released their own deep learning libraries on top of NodeJs.
+                            But there is still a shortage on tutorial materials and documentation in NodeJs community.
+                            </p><hr />
+                            <h2>React - A JavaScript library for building user interfaces</h2>
+                            <CardImg src={'https://miro.medium.com/max/2400/1*rpHtt5VicGT3T-mVJJ2jFw.gif'} style={{ width: "100%" }} />
                         </div>
                     </div>
                 </Container>
