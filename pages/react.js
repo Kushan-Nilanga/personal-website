@@ -9,6 +9,7 @@ class ReactTutorial extends React.Component {
                 <Navigation header="React Tutorial" />
                 <Container style={{ padding: "1em" }}>
                     <div>
+                        <h5>Introduction</h5>
                         <ul>
                             <li>What is NodeJs</li>
                             <li>Why use NodeJs
@@ -20,7 +21,7 @@ class ReactTutorial extends React.Component {
                                 </ul>
                             </li>
                             <li>NodeJs vs. Others</li>
-                            <li>Applications of NodeJs
+                            <li>Applications of NodeJs -&nbsp;<a href="https://www.netguru.com/blog/6-types-of-applications-you-can-build-with-node.js?hsLang=en">https://www.netguru.com/blog/6-types-of-applications-you-can-build-with-node.js?hsLang=en</a>
                                 <ul>
                                     <li>Iot (Internet of Things) Applications</li>
                                     <li>Real-Time applications</li>
@@ -31,8 +32,21 @@ class ReactTutorial extends React.Component {
                             <li>Drawbacks from NodeJs</li>
                             <li>NodeJs for Frontend</li>
                             <li>NodeJs frontend libraries</li>
-                            <li>NodeJs frontend libraries compared</li>
+                            <li>Frontend libraries compared</li>
                         </ul>
+                        <h5>React - A NodeJs UI Framework</h5>
+                        <ul>
+                            <li>Introduction to React</li>
+                            <li>React setup</li>
+                            <li>What is DOM</li>
+                            <li>How does react handle DOM</li>
+                            <li>React JSX</li>
+                            <li>React Component Class</li>
+                            <li>props &amp; state</li>
+                            <li>Event Handling</li>
+                            <li>Styling</li>
+                        </ul>
+                        <h5>Hands-on example</h5>
                     </div>
                 </Container>
             </div>
