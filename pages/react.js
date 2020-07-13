@@ -1,5 +1,5 @@
 import App from "next/app";
-import { Container, CardImg } from 'reactstrap';
+import { Container, CardImg, Card } from 'reactstrap';
 import Navigation from "../components/navigation";
 
 class ReactTutorial extends React.Component {
@@ -33,10 +33,10 @@ class ReactTutorial extends React.Component {
                                 <li>NodeJs frontend libraries</li>
                                 <li>Frontend libraries compared</li>
                             </ul>
-                            <h5>React</h5>
+                            <h5><a href="#5">React</a></h5>
                             <ul>
-                                <li>Introduction to React</li>
-                                <li>React setup</li>
+                                <li><a href="#5">Introduction to React</a></li>
+                                <li><a href="#6">React setup</a></li>
                                 <li>What is DOM</li>
                                 <li>How does react handle DOM</li>
                                 <li>React JSX</li>
@@ -96,7 +96,7 @@ class ReactTutorial extends React.Component {
                             <p>NodeJs is considered more as a runtime environment rather than our usual
                             server. Meaning NodeJs can be used to create virtually anything we can imagine.
                             However, python language shows some what similar characteristics to
-                            NodeJs. </p><br /><br />
+                            NodeJs. </p>
                             <h6>Performance</h6><p>
                                 Performance is one of the key areas that most of the highlevel programming languages
                                 fall behind. From them NodeJs proven to be one of the high performing programming
@@ -120,8 +120,27 @@ class ReactTutorial extends React.Component {
                             libraries such as Tensorflow have released their own deep learning libraries on top of NodeJs.
                             But there is still a shortage on tutorial materials and documentation in NodeJs community.
                             </p><hr />
-                            <h2>React - A JavaScript library for building user interfaces</h2>
-                            <CardImg src={'https://miro.medium.com/max/2400/1*rpHtt5VicGT3T-mVJJ2jFw.gif'} style={{ width: "100%" }} />
+                            <a href="https://reactjs.org/" id='5'><CardImg src={'https://miro.medium.com/max/2400/1*rpHtt5VicGT3T-mVJJ2jFw.gif'} style={{ width: "100%" }} /></a><br /><br />
+                            <h2><a href="https://reactjs.org/">React - A JavaScript library for building user interfaces</a></h2>
+                            <h5>Introduction to React</h5>
+                            <p>React is a javascript library to create user interfaces using javascript. React has a wide range of uses
+                            because react can be used to creat cross-platform applications using NodeJS. React can be used to make web
+                            user interfaces painlessly in object oriented manner. We will discuss different convenient features such
+                                as <code>Component, render(), props &amp; states</code>. React is basically a higher level package to
+                                create NodeJS GUIs.
+                                We will be diving deep into the rabbit hole in the coming topics.
+                            </p>
+                            <h5 id="6">React setup</h5>
+                            <p>Just like we use <code>npm</code> to install different packages to <code>node_packages</code> we can
+                            us <code>npx</code> to create different filestructures. So similarly we can use it to create a react application.</p>
+                            <Card style={{ backgroundColor: "black", width: "100%" }}>
+                                <div style={{ padding: "1em 4em 1em 4em" }}>
+                                    <code> npx create-react-app my-application</code><br/>
+                                    <code> cd my-application</code><br/>
+                                    <code> npm start</code>
+                                </div>
+                            </Card><br /><br/>
+                            <p>If the above code ran successfully,</p>
                         </div>
                     </div>
                 </Container>
