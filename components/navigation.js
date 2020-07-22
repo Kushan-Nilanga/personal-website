@@ -31,6 +31,11 @@ class Navigation extends React.Component {
                 </NavLink>
               </NavItem>
               <NavItem>
+                <NavLink href="/complexity">
+                  <a style={{color:"white"}}  className="navbar-nav">Complexity Calculator</a>
+                </NavLink>
+              </NavItem>
+              <NavItem>
                 <NavLink href="/contact">
                   <a style={{color:"white"}}  className="navbar-nav">About Me</a>
                 </NavLink>

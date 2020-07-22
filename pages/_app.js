@@ -1,9 +1,9 @@
 /* /pages/_app.js */
-
+import 'highlight.js/styles/github.css';
 import Layout from "../components/layout";
-
 import App, { Container } from "next/app";
 import React from "react";
+import "react-vis/dist/style.css"
 
 class MyApp extends App {
   static async getInitialProps({ Component, router, ctx }) {

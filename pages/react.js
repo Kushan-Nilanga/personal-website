@@ -1,4 +1,3 @@
-import App from "next/app";
 import { Container, CardImg, Card } from 'reactstrap';
 import Navigation from "../components/navigation";
 
@@ -149,4 +148,4 @@ class ReactTutorial extends React.Component {
     }
 }
 
-export default ReactTutorial;
+export default ReactTutorial; 
