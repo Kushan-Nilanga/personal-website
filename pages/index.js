@@ -51,7 +51,7 @@ class Index extends React.Component {
               </NavItem>
               <NavItem>
                 <NavLink href="/complexity">
-                  <a style={{color:"white"}}  className="navbar-nav">Complexity Calculator</a>
+                  <a style={{color:"black"}}  className="navbar-nav">Algorithms</a>
                 </NavLink>
               </NavItem>
               <NavItem>
