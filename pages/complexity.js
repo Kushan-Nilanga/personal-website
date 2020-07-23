@@ -289,6 +289,8 @@ class Complexity extends React.Component {
                                 <p>Use smaller range for inefficient algorithms. O(n<sup>3</sup>) (Range:15) <br />
                                     Have your developer console open for webpage to work correctly.
                                     Write your javascript code and Press run to view how the algorithm scales.
+                                    Use N as the variable which will be scaling. The web app will assign a value to 
+                                    N and run tests to visualise how the code scales.
                                 </p>
                             </div>
                             <form onSubmit={this.handleSubmit}>
