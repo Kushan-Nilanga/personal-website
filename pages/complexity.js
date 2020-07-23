@@ -307,7 +307,8 @@ class Complexity extends React.Component {
                                     </code>
                                 </pre>
                                 <div style={{ textAlign: "center" }}>
-                                    <Button style={{ height: "3em" }}>Run</Button>
+                                    <Button size="sm" color="success">Run</Button>
+                                    <Label style={{margin:"0.5em"}}>Click twice to run. (Make sure developer console is open)</Label>
                                 </div>
                             </form>
                             <div id="toor" style={{ alignItems: "center", display: "flex", justifyContent: "center" }}>
