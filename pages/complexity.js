@@ -246,7 +246,7 @@ class Complexity extends React.Component {
                     <Col md="4">
                         <div>
                             <h5>Controle Panel</h5>
-                            <p>Click to change the coefficients</p>
+                            <p>Click to change the coefficients. Use arrow keys after clicking sliders for fine tuning</p>
                             <div>
                                 <Label><Input id="c1" type="checkbox" onChange={this.checkBox} /> O(1)</Label><br /><div id="check1"></div>
                                 <Label><Input id="c2" type="checkbox" onChange={this.checkBox} /> O(n)</Label><br /><div id="check2"></div>
