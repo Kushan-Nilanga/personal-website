@@ -285,7 +285,7 @@ class Complexity extends React.Component {
                     <div className="App">
                         <div style={{ padding: "0.5em" }}>
                             <div>
-                                <h1>Algorithms test</h1>
+                                <h1>Algorithm test</h1>
                                 <p>Use smaller range for inefficient algorithms. O(n<sup>3</sup>) (Range:15) <br />
                                     Have your developer console open for webpage to work correctly.
                                     Write your javascript code and Press run to view how the algorithm scales.
@@ -333,7 +333,7 @@ class Complexity extends React.Component {
                                         <Card>
                                             <CardImg top width="100%" src="/img/on3.png" alt="O(n)" />
                                             <CardBody>
-                                                <p>O(n<sup>2</sup>) Complexity</p>
+                                                <p>O(n<sup>3</sup>) Complexity</p>
                                             </CardBody>
                                         </Card>
                                     </Col>
@@ -341,7 +341,7 @@ class Complexity extends React.Component {
                                         <Card>
                                             <CardImg top width="100%" src="/img/logn.png" alt="O(n)" />
                                             <CardBody>
-                                                <p>O(n<sup>2</sup>) Complexity</p>
+                                                <p>O(log(n)) Complexity</p>
                                             </CardBody>
                                         </Card>
                                     </Col>
