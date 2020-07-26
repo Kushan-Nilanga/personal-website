@@ -9,36 +9,21 @@ class ReactTutorial extends React.Component {
                 <Container style={{ padding: "1em" }}>
                     <div>
                         <div>
-                            <h5>Introduction</h5>
+                            <h5><a href="#1">Introduction</a></h5>
                             <ul>
                                 <li><a href="#1">What is NodeJs</a></li>
                                 <li><a href="#2">Why use NodeJs</a>
-                                    <ul>
-                                        <li>Performance</li>
-                                        <li>Scalability</li>
-                                    </ul>
                                 </li>
                                 <li><a href="#3">NodeJs vs. Others</a></li>
-                                <li>Applications of NodeJs -&nbsp;<a href="https://www.netguru.com/blog/6-types-of-applications-you-can-build-with-node.js?hsLang=en">https://www.netguru.com/blog/6-types-of-applications-you-can-build-with-node.js?hsLang=en</a>
-                                    <ul>
-                                        <li>Iot (Internet of Things) Applications</li>
-                                        <li>Real-Time applications</li>
-                                        <li>Microservices Architecture</li>
-                                        <li>Others</li>
-                                    </ul>
-                                </li>
                                 <li><a href="#4">Drawbacks of NodeJs</a></li>
-                                <li>NodeJs for Frontend</li>
-                                <li>NodeJs frontend libraries</li>
-                                <li>Frontend libraries compared</li>
                             </ul>
                             <h5><a href="#5">React</a></h5>
                             <ul>
                                 <li><a href="#5">Introduction to React</a></li>
                                 <li><a href="#6">React setup</a></li>
-                                <li>What is DOM</li>
-                                <li>How does react handle DOM</li>
-                                <li>React JSX</li>
+                                <li><a href="#7">What is DOM</a></li>
+                                <li><a href="#8">How does react handle DOM</a></li>
+                                <li><a href="#9">React JSX</a></li>
                                 <li>React Component Class</li>
                                 <li>props &amp; state</li>
                                 <li>Event Handling</li>
@@ -132,14 +117,34 @@ class ReactTutorial extends React.Component {
                             <h5 id="6">React setup</h5>
                             <p>Just like we use <code>npm</code> to install different packages to <code>node_packages</code> we can
                             us <code>npx</code> to create different filestructures. So similarly we can use it to create a react application.</p>
+                            <code> npm install -g npx</code><br /><br />
+                            <p> This will install a nodejs package runner. What is basically does is that it'll install a nodejs package similar to 
+                             npm which allows us to create folder structures from templates provides by React, Express, Nextjs etc.
+                            </p>
                             <Card style={{ backgroundColor: "black", width: "100%" }}>
                                 <div style={{ padding: "1em 4em 1em 4em" }}>
-                                    <code> npx create-react-app my-application</code><br/>
-                                    <code> cd my-application</code><br/>
+
+                                    <code> npx create-react-app my-application</code><br />
+                                    <code> cd my-application</code><br />
                                     <code> npm start</code>
                                 </div>
-                            </Card><br /><br/>
-                            <p>If the above code ran successfully,</p>
+                            </Card><br /><br />
+                            <p>If the above code ran successfully, your folder should look a something like this.</p>
+                            <img style={{ width: "15em" }} src="https://tducasse.com/static/1dc5c171044f112217c91def9e659a42/276eb/architecture.png" />
+                            <br /><br />
+                            <h5 id="7">What is DOM</h5>
+                            <p>Document Object Model is a programming interface for XML which allows programs to structure, style
+                             and change content. React helps developers make changes and updates to DOM programmeticaly using javascript.
+                             React has it's own virtual DOM which react references before making changes to real DOM in the browser.
+                             We don't have to worry too much about handeling DOM and making changes because React takecare of all those nitty
+                             gritty stuff under the hood. <a href="https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model/Introduction">Further reading...</a>   
+                            </p>
+                            <h5 id="8">How does react handle DOM</h5>
+                            <p>React has its own virtual DOM which it updates and compares with it's old versions and update the real DOM respectively.
+                             To identify changes in virtual DOM, React implements <code><a href="">states</a></code> and <code><a href="">props</a></code> which 
+                             we will be diving into deep in future sections.
+                            </p>
+                            <h5 id="9">React JSX</h5>
                         </div>
                     </div>
                 </Container>
