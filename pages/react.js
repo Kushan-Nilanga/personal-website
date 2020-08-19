@@ -145,6 +145,11 @@ class ReactTutorial extends React.Component {
                              we will be diving into deep in future sections.
                             </p>
                             <h5 id="9">React JSX</h5>
+                            <p>
+                                JSX stand for JavaScript XML format is a covinient, programmetic way to describe UI logic using javascript rather than using 
+                                 plain javascript to update DOM elements. This is one of the best features of react because it binds all the key concepts which are great about react
+                                together such as states, props, module exports, virtual DOM refreshes perfectly. The <code>reactDOM.render</code> 
+                            </p>
                         </div>
                     </div>
                 </Container>
